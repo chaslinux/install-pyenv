@@ -9,8 +9,7 @@ sudo apt install libncursesw5-dev xz-utils tk-dev libxml2-dev -y
 sudo apt install libxmlsec1-dev libffi-dev liblzma-dev -y
 curl https://pyenv.run | bash
 
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
-echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
-echo 'eval "$(pyenv init - bash)"' >> ~/.profile
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
 
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
